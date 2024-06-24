@@ -1,4 +1,3 @@
-https://discord.gg/6WbZEV8Kev sunucusu bir tool yarışması düzenliyor o yarışma için yaptığım discord tool
 
 # Discord Bot - Otomatik Mesaj Gönderme Uygulaması
 
@@ -41,6 +40,7 @@ Program çalıştırıldığında, aşağıdaki seçeneklerle karşılaşacaksı
     1 - token ile giriş
     2 - Şifre ile ayrıntılı bilgi alma
     3 - Spam 
+    4 - Bilgileri değiştirme
     99 - Çıkış    
 
 Seçenekleri seçerek programın işlevlerini kullanabilirsiniz.
@@ -49,3 +49,4 @@ Dikkat
     1 - token ile giriş seçeneğiyle, bir Discord bot tokeni ve bir kanal ID'si girerek botunuzun belirli bir kanala oturum açmasını ve mesaj göndermesini sağlayabilirsiniz.
     2 - Şifre ile ayrıntılı bilgi alma seçeneğiyle, Discord hesabınızın kullanıcı adı ve şifresini girerek token alabilir ve kullanıcı bilgilerinizi görebilirsiniz.
     3 - Spam seçeneğiyle, belirli bir token ve kanal ID'si kullanarak belirli bir kanala belirli aralıklarla mesaj gönderebilirsiniz.
+    4 - Tokeni girilen hesabın kullanıcı adı, pp gibi bilgilerini değiştirebilirsiniz.
