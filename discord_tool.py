@@ -66,6 +66,33 @@ def passwo():
     if token:
         login_and_join(token)
 
+def degistir():
+    m = str(input("Yeni ismi girin : "))
+    ff = input("Yeni pp dosya yolu giriniz : ")
+    tok = input("Tokeni giriniz : ")
+    import discord
+
+    client = discord.Client(intents=discord.Intents.all())
+
+    @client.event
+    async def on_ready():
+        # Get the bot's user object.
+        bot = client.user
+        
+        # Set the bot's name and description.
+        new_name = m
+        
+        # Change the bot's name and description.
+        await bot.edit(username=new_name)
+        
+
+        # Change the bot's profile picture (avatar).
+        with open(ff, "rb") as avatar_file:
+            await bot.edit(avatar=avatar_file.read())
+
+    # Run the bot with your token
+    client.run(tok)
+
 def sel():
     def login_and_join(token, gecko_driver_path):
 
@@ -168,6 +195,7 @@ print('''
 1 - token ile giriş
 2 - Şifre ile ayrıntılı bilgi alma
 3 - Spam 
+4 - Bilgileri değiştirme
 99 - Çıkış    
     ''')
 
@@ -179,6 +207,8 @@ elif i == 2:
     passwo()
 elif i == 3:
     spam()
+elif i ==4:
+    degistir()
 elif i == 99:
     exit()
 else:
